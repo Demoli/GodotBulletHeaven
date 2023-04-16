@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dayowldnl8sx3"]
+
+[ext_resource type="Texture2D" uid="uid://bpnw34dyjec3" path="res://Assets/Default (64px)/Characters/red_character.png" id="1_bwfq3"]
+[ext_resource type="Script" path="res://Enemies/BaseEnemy.gd" id="1_ll80a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7uf15"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5gyl7"]
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_ll80a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bwfq3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_7uf15")
+
+[node name="PlayerCollider" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollider"]
+shape = SubResource("CapsuleShape2D_5gyl7")

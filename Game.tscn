@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://4xgaxyr4aoaq"]
+
+[ext_resource type="PackedScene" uid="uid://cy4uk0blx6meh" path="res://Player/Player.tscn" id="1_jsrkg"]
+[ext_resource type="PackedScene" uid="uid://cxtcv02al03aq" path="res://Levels/Dungeon1.tscn" id="2_fakqm"]
+[ext_resource type="PackedScene" uid="uid://dayowldnl8sx3" path="res://Enemies/BaseEnemy.tscn" id="3_s11d4"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Dungeon" parent="." instance=ExtResource("2_fakqm")]
+
+[node name="Player" parent="." instance=ExtResource("1_jsrkg")]
+position = Vector2(332, 332)
+
+[node name="Enemy" parent="." instance=ExtResource("3_s11d4")]
+position = Vector2(314, 187)
