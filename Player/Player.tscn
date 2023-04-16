@@ -34,7 +34,6 @@ autostart = true
 [node name="Weapons" type="Node2D" parent="."]
 
 [node name="BaseAOEWeapon" parent="Weapons" instance=ExtResource("3_qenh1")]
-cooldown = 1.0
 
 [connection signal="area_entered" from="EnemyCollider" to="." method="_on_enemy_collider_area_entered"]
 [connection signal="area_exited" from="EnemyCollider" to="." method="_on_enemy_collider_area_exited"]

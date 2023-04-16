@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://clyqaoevithan"]
+
+[ext_resource type="Script" path="res://Waves/BaseEnemyWave.gd" id="1_gfaay"]
+[ext_resource type="PackedScene" uid="uid://dayowldnl8sx3" path="res://Enemies/BaseEnemy.tscn" id="1_o7q04"]
+
+[node name="BaseEnemyWave" type="Node2D"]
+script = ExtResource("1_gfaay")
+
+[node name="Enemy" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(1, 11)
+
+[node name="Enemy2" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(39, 14)
+
+[node name="Enemy3" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(-37, 7)
+
+[node name="Enemy4" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(-16, -30)
+
+[node name="Enemy5" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(24, -25)
+
+[node name="Enemy6" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(-29, 50)
+
+[node name="Enemy7" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(45, 56)
+
+[node name="Enemy8" parent="." instance=ExtResource("1_o7q04")]
+position = Vector2(7, 53)

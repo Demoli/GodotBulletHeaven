@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cy4uk0blx6meh" path="res://Player/Player.tscn" id="1_jsrkg"]
 [ext_resource type="PackedScene" uid="uid://cxtcv02al03aq" path="res://Levels/Dungeon1.tscn" id="2_fakqm"]
-[ext_resource type="PackedScene" uid="uid://dayowldnl8sx3" path="res://Enemies/BaseEnemy.tscn" id="3_s11d4"]
+[ext_resource type="PackedScene" uid="uid://drd5503kytart" path="res://Waves/WaveSpawner.tscn" id="4_ojvju"]
 
 [node name="Game" type="Node2D"]
 
@@ -11,5 +11,4 @@
 [node name="Player" parent="." instance=ExtResource("1_jsrkg")]
 position = Vector2(332, 332)
 
-[node name="Enemy" parent="." instance=ExtResource("3_s11d4")]
-position = Vector2(314, 187)
+[node name="WaveSpawner" parent="." instance=ExtResource("4_ojvju")]
