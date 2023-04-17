@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Weapons/AOE/BaseAOEWeapon.gd" id="1_06ibh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t3e7g"]
-radius = 40.0
+radius = 60.0
 
 [node name="BaseAOEWeapon" type="Area2D"]
 collision_layer = 0

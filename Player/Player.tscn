@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cy4uk0blx6meh"]
+[gd_scene load_steps=7 format=3 uid="uid://cy4uk0blx6meh"]
 
 [ext_resource type="Texture2D" uid="uid://07ksx2ec3ifl" path="res://Assets/Default (64px)/Characters/green_character.png" id="1_1iqv8"]
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_ud5d4"]
 [ext_resource type="PackedScene" uid="uid://bw8vhuc3rvjlj" path="res://Weapons/AOE/BaseAOEWeapon.tscn" id="3_qenh1"]
+[ext_resource type="PackedScene" uid="uid://dufklmm2gqe2h" path="res://Player/PlayerStats/BasePlayerStats.tscn" id="4_phrd2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ym01c"]
 radius = 12.0
@@ -34,6 +35,8 @@ autostart = true
 [node name="Weapons" type="Node2D" parent="."]
 
 [node name="BaseAOEWeapon" parent="Weapons" instance=ExtResource("3_qenh1")]
+
+[node name="PlayerStats" parent="." instance=ExtResource("4_phrd2")]
 
 [connection signal="area_entered" from="EnemyCollider" to="." method="_on_enemy_collider_area_entered"]
 [connection signal="area_exited" from="EnemyCollider" to="." method="_on_enemy_collider_area_exited"]

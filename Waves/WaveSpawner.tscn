@@ -6,5 +6,6 @@
 script = ExtResource("1_ltklx")
 
 [node name="WaveTimer" type="Timer" parent="."]
+wait_time = 3.0
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]

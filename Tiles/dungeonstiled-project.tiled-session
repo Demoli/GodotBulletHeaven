@@ -1,6 +1,7 @@
 {
-    "activeFile": "",
+    "activeFile": "sampleSheet.tsx",
     "expandedProjectPaths": [
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -15,13 +16,29 @@
         "C:/Users/naitk/Documents/Assets/Kenney Scribble Dungeons/Tiled/sampleSheet.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "sampleMap.tmx": {
+            "scale": 0.8713131313131313,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 438.4187340598191,
+                "y": 367.83561326223054
+            }
+        },
+        "sampleSheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
     "last.imagePath": "C:/Users/naitk/GodotEngine/projects/BulletHeaven/Tiles",
     "openFiles": [
+        "sampleMap.tmx",
+        "sampleSheet.tsx"
     ],
     "project": "dungeonstiled-project.tiled-project",
     "recentFiles": [
+        "sampleMap.tmx",
+        "sampleSheet.tsx",
         "C:/Users/naitk/Documents/Assets/Kenney Scribble Dungeons/Tiled/sampleMap.tmx",
         "C:/Users/naitk/Documents/Assets/Kenney Scribble Dungeons/Tiled/sampleSheet.tsx"
     ]

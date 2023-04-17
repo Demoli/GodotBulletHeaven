@@ -1,12 +1,12 @@
 extends CharacterBody2D
 
-@export var base_speed = 300
-@export var hp = 100
+@onready var move_speed = $PlayerStats.move_speed
+@onready var hp = $PlayerStats.hp
 
 var touching_enemies : Array[Enemy] = []
 
 func _physics_process(delta):
-	velocity = Input.get_vector("p_move_left","p_move_right", "p_move_up","p_move_down") * base_speed
+	velocity = Input.get_vector("p_move_left","p_move_right", "p_move_up","p_move_down") * move_speed
 
 	move_and_slide()
 
@@ -14,7 +14,6 @@ func _on_enemy_collider_area_entered(area: Area2D):
 	var body = area.get_parent()
 	
 	touching_enemies.append(body)
-
 
 func _on_enemy_collider_area_exited(area: Area2D):
 	var body = area.get_parent()

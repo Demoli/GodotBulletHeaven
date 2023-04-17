@@ -6,16 +6,12 @@ extends Node2D
 @onready var camera = get_viewport().get_camera_2d()
 @onready var viewport_size = camera.get_viewport_rect().size
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn()
 	$WaveTimer.start()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
 
 func _on_wave_timer_timeout():
 	spawn()
